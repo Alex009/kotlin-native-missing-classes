@@ -1,0 +1,15 @@
+apply plugin: 'kotlin-platform-native'
+
+sourceSets {
+    main {
+        component {
+            targets = ['ios_arm64', 'ios_x64']
+            outputKinds = [ KLIBRARY ]
+            baseName.set("MultiPlatformUtils")
+        }
+    }
+}
+
+dependencies {
+    expectedBy project("$parent.path:common")
+}

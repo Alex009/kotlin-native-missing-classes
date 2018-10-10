@@ -1,0 +1,7 @@
+enableFeaturePreview('GRADLE_METADATA')
+
+include ':mpp-library:common'
+include ':mpp-library:ios'
+
+include ':mpp-library:scl:utils:common'
+include ':mpp-library:scl:utils:ios'
